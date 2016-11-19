@@ -45,28 +45,28 @@ void *produce(int*);
 int main(int argc, char const *argv[])
 {
     // Check the parameters
-//    if (4 != argc)
-//    {
-//        fprintf(stderr, "usage: Pds&Csm.out <int> <int> <int>\n");
-//        return -1;
-//    }
-//    if ((atoi(argv[1]) < 0) || (atoi(argv[2]) < 0) || (atoi(argv[3]) < 0))
-//    {
-//        fprintf(stderr, "Input should be positive interger!\n");
-//        return -1;
-//    }
+    if (4 != argc)
+    {
+        fprintf(stderr, "usage: Pds&Csm.out <int> <int> <int>\n");
+        return -1;
+    }
+    if ((atoi(argv[1]) < 0) || (atoi(argv[2]) < 0) || (atoi(argv[3]) < 0))
+    {
+        fprintf(stderr, "Input should be positive interger!\n");
+        return -1;
+    }
 
     /* set the para */
-    int numOfCsm = 2, numOfPds = 3, timeOfSleep = 10;
-//    timeOfSleep = atoi(argv[1]);
-//    numOfPds = atoi(argv[2]);
-//    numOfCsm = atoi(argv[3]);
+    int numOfCsm, numOfPds, timeOfSleep;
+    timeOfSleep = atoi(argv[1]);
+    numOfPds = atoi(argv[2]);
+    numOfCsm = atoi(argv[3]);
     srand(time(NULL));
 
     /* initialize data and semaphore */
     buffer.head = buffer.tail = 0;
     pthread_mutex_init(&mutex, NULL);
-    empty = sem_open("empty", O_CREAT|O_RDWR, 0666, BUFFER_SIZE);
+    empty = sem_open("empty", O_CREAT|O_RDWR, 0666, BUFFER_SIZE - 1);
     full = sem_open("full", O_CREAT|O_RDWR, 0666, 0);
     if (SEM_FAILED == empty || SEM_FAILED == full)
     {
@@ -95,9 +95,15 @@ int main(int argc, char const *argv[])
         int num = i;
         pthread_create(&producers[i], &attr, produce, &num);
     }
-    /* sleep and exit */
+
+    /* sleep */
     sleep(timeOfSleep);
+
+    /* destroy the semaphore and terminate */
     printf("The process is completed!\n");
+    sem_unlink("empty");
+    sem_unlink("full");
+    pthread_mutex_destroy(&mutex);
     exit(0);
 }
 
@@ -106,7 +112,7 @@ void *consume(int *i)
     int CsmID = *i;
     while (1)
     {
-        sleep(rand() % MAXSLEEP);
+        sleep(rand() % MAXSLEEP) + 1;
 
         sem_wait(full);
         pthread_mutex_lock(&mutex);
@@ -114,12 +120,11 @@ void *consume(int *i)
         int x = remove_item(&buffer);
         if (x < 0)
         {
-            perror("queue is empty!");
+            fprintf(stderr, "the queue is empty! \n");
             exit(-1);
         }
-        else{
+        else
             printf("Consumer %d get %d from buffer\n", CsmID, x);
-        }
 
         pthread_mutex_unlock(&mutex);
         sem_post(empty);
@@ -138,12 +143,11 @@ void *produce(int *i)
         int num = rand(), x = insert_item(&buffer, num);
         if (x < 0)
         {
-            perror("queue is full!");
+            fprintf(stderr, "the queue is full! \n");
             exit(-1);
         }
-        else{
+        else
             printf("Producer %d add %d to buffer\n", pdsID, num);
-        }
 
         pthread_mutex_unlock(&mutex);
         sem_post(full);

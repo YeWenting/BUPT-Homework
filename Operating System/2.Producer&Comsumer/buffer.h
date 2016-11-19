@@ -1,3 +1,3 @@
 typedef int buffer_item;
 
-#define BUFFER_SIZE 100
+#define BUFFER_SIZE 10
