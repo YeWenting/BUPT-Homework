@@ -14,10 +14,6 @@
  * 4. Terminate
 ***********************************/
 
-typedef struct{
-    buffer_item data[BUFFER_SIZE];
-    int head, tail;
-} bufferQueue;
 bufferQueue buffer;
 
 sem_t *full, *empty;
