@@ -3,5 +3,5 @@ project(Producer_Comsumer)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ")
 
-set(SOURCE_FILES main.c)
+set(SOURCE_FILES main.c buffer.c)
 add_executable(Producer_Comsumer ${SOURCE_FILES})
