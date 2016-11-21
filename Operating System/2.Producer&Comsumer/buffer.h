@@ -9,3 +9,5 @@ typedef struct{
 
 int insert_item(bufferQueue *, buffer_item);
 int remove_item(bufferQueue *);
+
+// bufferQueue's function
