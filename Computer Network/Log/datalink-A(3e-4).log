@@ -1,0 +1,476 @@
+datalink af3 -ber 3e-4 
+=========================================================================
+                          Station A                                 
+-------------------------------------------------------------------------
+Protocol.lib, version 3.0, Build: Oct 19 2009 (jiangy@public3.bta.net.cn)
+Channel: 8000 bps, 270 ms propagation delay, bit error rate 3.0E-004
+Log file "datalink-A.log", TCP port 59144, debug mask 0x03
+Station A is waiting for station B on TCP port 59144 ... Done.
+New epoch: Fri May 13 11:07:48 2016
+=========================================================================
+Designed and implemented by Wenting Ye.
+For any problem please contact QQ:471731724
+Build: May 13 2016  11:01:35
+0.001 Send DATA 0 63, ID 10000
+0.219 Send DATA 1 63, ID 10001
+0.484 Send DATA 2 63, ID 10002
+0.531 **** Receiver Error, Bad CRC Checksum
+0.531 Send 1 NAK for frame 0
+0.531 Current receive windows:(size 32)
+	Most expected frame:	0
+	Received newest frame:	1
+	Number of bad frames:	1
+0.750 Send DATA 3 63, ID 10003
+0.796 Recv DATA 1 63, ID 20001
+1.015 Send DATA 4 63, ID 10004
+1.062 **** Receiver Error, Bad CRC Checksum
+1.280 Send DATA 5 63, ID 10005
+1.327 **** Receiver Error, Bad CRC Checksum
+1.545 Send DATA 6 63, ID 10006
+1.592 Recv DATA 4 1, ID 20004
+1.623 Send DATA 2 63, ID 10002
+1.623 Recv NAK for frame 2
+1.857 Recv DATA 0 1, ID 20000
+2.076 Send DATA 7 1, ID 10007
+2.122 Send 2 NAK for frame 2
+2.122 Send 3 NAK for frame 3
+2.122 Current receive windows:(size 32)
+	Most expected frame:	2
+	Received newest frame:	5
+	Number of bad frames:	2
+2.122 Recv DATA 5 1, ID 20005
+2.341 Send DATA 8 1, ID 10008
+2.388 **** Receiver Error, Bad CRC Checksum
+2.606 Send DATA 9 1, ID 10009
+2.653 Recv DATA 7 1, ID 20007
+2.871 Send DATA 10 1, ID 10010
+2.902 Recv DATA 8 1, ID 20008
+3.136 Send DATA 11 1, ID 10011
+3.168 **** Receiver Error, Bad CRC Checksum
+3.402 Send DATA 12 1, ID 10012
+3.433 Recv DATA 2 1, ID 20002
+3.433 .... 3 packets received, 1940 bps, 24.25%, Err 11 (4.0e-004)
+3.667 Send DATA 13 2, ID 10013
+3.698 **** Receiver Error, Bad CRC Checksum
+3.698 Send 4 NAK for frame 3
+3.698 Send 5 NAK for frame 6
+3.698 Current receive windows:(size 32)
+	Most expected frame:	3
+	Received newest frame:	9
+	Number of bad frames:	2
+3.729 Send DATA 2 2, ID 10002
+3.729 Recv NAK for frame 2
+3.760 Send DATA 3 2, ID 10003
+3.760 Recv NAK for frame 3
+3.994 Recv DATA 10 1, ID 20010
+4.260 **** Receiver Error, Bad CRC Checksum
+4.462 Send DATA 14 2, ID 10014
+4.494 Recv DATA 12 1, ID 20012
+4.728 Send DATA 15 2, ID 10015
+4.759 **** Receiver Error, Bad CRC Checksum
+4.993 Send DATA 16 2, ID 10016
+5.024 Recv DATA 3 1, ID 20003
+5.242 Send DATA 17 5, ID 10017
+5.289 Recv DATA 6 1, ID 20006
+5.508 Send DATA 18 8, ID 10018
+5.554 **** Receiver Error, Bad CRC Checksum
+5.554 Send 6 NAK for frame 9
+5.554 Send 7 NAK for frame 11
+5.554 Current receive windows:(size 32)
+	Most expected frame:	9
+	Received newest frame:	13
+	Number of bad frames:	2
+5.586 Send DATA 6 8, ID 10006
+5.586 Recv NAK for frame 6
+5.617 Send DATA 7 8, ID 10007
+5.617 Recv NAK for frame 7
+5.648 Send DATA 10 8, ID 10010
+5.648 Recv NAK for frame 10
+5.679 Send DATA 11 8, ID 10011
+5.679 Recv NAK for frame 11
+5.851 Recv DATA 15 5, ID 20015
+6.116 **** Receiver Error, Bad CRC Checksum
+6.381 **** Receiver Error, Bad CRC Checksum
+6.646 Recv DATA 18 5, ID 20018
+6.834 Send DATA 19 8, ID 10019
+6.912 Recv DATA 9 5, ID 20009
+6.912 .... 10 packets received, 3082 bps, 38.52%, Err 18 (3.3e-004)
+7.099 Send DATA 20 10, ID 10020
+7.177 Recv DATA 11 5, ID 20011
+7.364 Send DATA 21 12, ID 10021
+7.426 Send 8 NAK for frame 13
+7.426 Send 9 NAK for frame 14
+7.426 Send 10 NAK for frame 16
+7.426 Send 11 NAK for frame 17
+7.426 Current receive windows:(size 32)
+	Most expected frame:	13
+	Received newest frame:	19
+	Number of bad frames:	4
+7.426 Recv DATA 19 5, ID 20019
+7.645 Send DATA 22 12, ID 10022
+7.692 Recv DATA 20 5, ID 20020
+7.910 Send DATA 23 12, ID 10023
+7.957 Recv DATA 21 5, ID 20021
+8.175 Send DATA 24 12, ID 10024
+8.222 **** Receiver Error, Bad CRC Checksum
+8.253 Send DATA 6 12, ID 10006
+8.253 Recv NAK for frame 6
+8.269 Send DATA 10 12, ID 10010
+8.269 Recv NAK for frame 10
+8.284 Send DATA 11 12, ID 10011
+8.284 Recv NAK for frame 11
+8.316 Send DATA 17 12, ID 10017
+8.316 Recv NAK for frame 17
+8.518 Recv DATA 23 5, ID 20023
+8.784 Recv DATA 13 5, ID 20013
+9.033 **** Receiver Error, Bad CRC Checksum
+9.033 Send 12 NAK for frame 14
+9.033 Send 13 NAK for frame 16
+9.033 Send 14 NAK for frame 17
+9.033 Send 15 NAK for frame 22
+9.033 Current receive windows:(size 32)
+	Most expected frame:	14
+	Received newest frame:	24
+	Number of bad frames:	4
+9.298 Recv DATA 16 5, ID 20016
+9.517 Send DATA 25 13, ID 10025
+9.564 **** Receiver Error, Bad CRC Checksum
+9.782 Send DATA 26 13, ID 10026
+9.829 **** Receiver Error, Bad CRC Checksum
+10.047 Send DATA 27 13, ID 10027
+10.094 Recv DATA 25 5, ID 20025
+10.312 Send DATA 28 13, ID 10028
+10.359 Recv DATA 26 5, ID 20026
+10.562 Send DATA 29 13, ID 10029
+10.609 **** Receiver Error, Bad CRC Checksum
+10.827 Send DATA 30 13, ID 10030
+11.092 Send DATA 31 13, ID 10031
+11.124 **** Receiver Error, Bad CRC Checksum
+11.358 Send DATA 32 13, ID 10032
+11.389 Recv DATA 22 5, ID 20022
+11.404 Send DATA 6 13, ID 10006
+11.404 Recv NAK for frame 6
+11.436 Send DATA 10 13, ID 10010
+11.436 Recv NAK for frame 10
+11.451 Send DATA 14 13, ID 10014
+11.451 Recv NAK for frame 14
+11.467 Send DATA 19 13, ID 10019
+11.467 Recv NAK for frame 19
+11.498 Send DATA 20 13, ID 10020
+11.498 Recv NAK for frame 20
+11.701 Recv DATA 27 5, ID 20027
+11.966 Send 16 NAK for frame 14
+11.966 Send 17 NAK for frame 17
+11.966 Send 18 NAK for frame 24
+11.966 Current receive windows:(size 32)
+	Most expected frame:	14
+	Received newest frame:	28
+	Number of bad frames:	3
+11.966 Recv DATA 28 5, ID 20028
+12.231 Recv DATA 29 5, ID 20029
+12.496 **** Receiver Error, Bad CRC Checksum
+12.652 ---- DATA 8 timeout
+12.652 Send DATA 8 13, ID 10008
+12.746 **** Receiver Error, Bad CRC Checksum
+12.918 ---- DATA 9 timeout
+12.918 Send DATA 9 13, ID 10009
+13.011 **** Receiver Error, Bad CRC Checksum
+13.042 Send DATA 10 13, ID 10010
+13.042 Recv NAK for frame 10
+13.074 Send DATA 14 13, ID 10014
+13.074 Recv NAK for frame 14
+13.105 Send DATA 19 13, ID 10019
+13.105 Recv NAK for frame 19
+13.120 Send DATA 20 13, ID 10020
+13.120 Recv NAK for frame 20
+13.152 Send DATA 29 13, ID 10029
+13.152 Recv NAK for frame 29
+13.308 **** Receiver Error, Bad CRC Checksum
+13.713 ---- DATA 12 timeout
+13.713 Send DATA 12 13, ID 10012
+13.838 Recv DATA 35 9, ID 20035
+13.978 ---- DATA 13 timeout
+13.978 Send DATA 13 13, ID 10013
+14.088 Recv DATA 14 9, ID 20014
+14.088 .... 15 packets received, 2223 bps, 27.78%, Err 33 (2.9e-004)
+14.353 **** Receiver Error, Bad CRC Checksum
+14.353 Send 19 NAK for frame 17
+14.353 Send 20 NAK for frame 24
+14.353 Send 21 NAK for frame 30
+14.353 Send 22 NAK for frame 31
+14.353 Send 23 NAK for frame 32
+14.353 Send 24 NAK for frame 33
+14.353 Send 25 NAK for frame 34
+14.353 Current receive windows:(size 32)
+	Most expected frame:	17
+	Received newest frame:	36
+	Number of bad frames:	7
+14.618 **** Receiver Error, Bad CRC Checksum
+14.868 Recv DATA 36 18, ID 20036
+14.883 Send DATA 19 16, ID 10019
+14.883 Recv NAK for frame 19
+14.914 Send DATA 29 16, ID 10029
+14.914 Recv NAK for frame 29
+15.148 Recv DATA 37 18, ID 20037
+15.414 **** Receiver Error, Bad CRC Checksum
+15.679 Recv DATA 39 18, ID 20039
+15.882 Send DATA 33 16, ID 10033
+15.928 **** Receiver Error, Bad CRC Checksum
+16.147 Send DATA 34 16, ID 10034
+16.412 Send DATA 35 16, ID 10035
+16.474 Recv DATA 17 18, ID 20017
+16.474 .... 18 packets received, 2274 bps, 28.43%, Err 39 (3.0e-004)
+16.677 Send DATA 36 23, ID 10036
+16.740 **** Receiver Error, Bad CRC Checksum
+16.740 Send 26 NAK for frame 24
+16.740 Send 27 NAK for frame 30
+16.740 Send 28 NAK for frame 31
+16.740 Send 29 NAK for frame 32
+16.740 Send 30 NAK for frame 33
+16.740 Send 31 NAK for frame 34
+16.740 Send 32 NAK for frame 38
+16.740 Current receive windows:(size 32)
+	Most expected frame:	24
+	Received newest frame:	40
+	Number of bad frames:	7
+16.989 **** Receiver Error, Bad CRC Checksum
+16.989 Send DATA 37 23, ID 10037
+17.239 Send DATA 38 23, ID 10038
+17.270 **** Receiver Error, Bad CRC Checksum
+17.504 Send DATA 39 23, ID 10039
+17.535 Recv DATA 32 18, ID 20032
+17.676 ---- DATA 21 timeout
+17.676 Send DATA 21 23, ID 10021
+17.769 **** Receiver Error, Bad CRC Checksum
+17.972 ---- DATA 22 timeout
+17.972 Send DATA 22 23, ID 10022
+18.034 **** Receiver Error, Bad CRC Checksum
+18.066 Send DATA 31 23, ID 10031
+18.066 Recv NAK for frame 31
+18.222 ---- DATA 23 timeout
+18.222 Send DATA 23 23, ID 10023
+18.830 Send DATA 40 23, ID 10040
+18.846 **** Receiver Error, Bad CRC Checksum
+19.080 Send DATA 41 23, ID 10041
+19.095 Recv DATA 30 30, ID 20030
+19.345 Send DATA 42 23, ID 10042
+19.360 **** Receiver Error, Bad CRC Checksum
+19.610 Send DATA 43 23, ID 10043
+19.875 Send DATA 44 23, ID 10044
+19.891 **** Receiver Error, Bad CRC Checksum
+20.140 Send DATA 45 23, ID 10045
+20.156 **** Receiver Error, Bad CRC Checksum
+20.156 Send 33 NAK for frame 24
+20.156 Send 34 NAK for frame 31
+20.156 Send 35 NAK for frame 33
+20.156 Send 36 NAK for frame 34
+20.156 Send 37 NAK for frame 38
+20.156 Current receive windows:(size 32)
+	Most expected frame:	24
+	Received newest frame:	40
+	Number of bad frames:	5
+20.406 **** Receiver Error, Bad CRC Checksum
+20.437 Send DATA 46 23, ID 10046
+20.671 **** Receiver Error, Bad CRC Checksum
+20.702 Send DATA 31 23, ID 10031
+20.702 Recv NAK for frame 31
+20.702 Send DATA 32 23, ID 10032
+20.702 Recv NAK for frame 32
+20.733 Send DATA 33 23, ID 10033
+20.733 Recv NAK for frame 33
+20.749 Send DATA 34 23, ID 10034
+20.749 Recv NAK for frame 34
+20.780 Send DATA 35 23, ID 10035
+20.780 Recv NAK for frame 35
+20.811 Send DATA 36 23, ID 10036
+20.811 Recv NAK for frame 36
+21.498 Recv DATA 24 30, ID 20024
+21.498 .... 25 packets received, 2411 bps, 30.14%, Err 52 (3.0e-004)
+21.763 **** Receiver Error, Bad CRC Checksum
+21.763 Send 38 NAK for frame 31
+21.763 Send 39 NAK for frame 33
+21.763 Send 40 NAK for frame 34
+21.763 Send 41 NAK for frame 38
+21.763 Current receive windows:(size 32)
+	Most expected frame:	31
+	Received newest frame:	40
+	Number of bad frames:	4
+22.028 Recv DATA 33 30, ID 20033
+22.293 **** Receiver Error, Bad CRC Checksum
+22.293 Send DATA 47 30, ID 10047
+22.558 **** Receiver Error, Bad CRC Checksum
+22.558 Send DATA 48 30, ID 10048
+22.824 Send DATA 49 30, ID 10049
+23.073 **** Receiver Error, Bad CRC Checksum
+23.089 Send DATA 50 30, ID 10050
+23.338 **** Receiver Error, Bad CRC Checksum
+23.354 Send DATA 51 30, ID 10051
+23.604 **** Receiver Error, Bad CRC Checksum
+23.619 Send DATA 52 30, ID 10052
+23.869 **** Receiver Error, Bad CRC Checksum
+23.869 Send DATA 53 30, ID 10053
+24.134 **** Receiver Error, Bad CRC Checksum
+24.134 Send DATA 54 30, ID 10054
+24.399 Recv DATA 38 30, ID 20038
+24.399 Send DATA 55 30, ID 10055
+24.430 Send DATA 31 30, ID 10031
+24.430 Recv NAK for frame 31
+24.462 Send DATA 32 30, ID 10032
+24.462 Recv NAK for frame 32
+24.477 Send DATA 36 30, ID 10036
+24.477 Recv NAK for frame 36
+24.493 Send DATA 39 30, ID 10039
+24.493 Recv NAK for frame 39
+24.508 Send DATA 44 30, ID 10044
+24.508 Recv NAK for frame 44
+24.696 **** Receiver Error, Bad CRC Checksum
+24.696 Send 42 NAK for frame 31
+24.696 Send 43 NAK for frame 34
+24.696 Current receive windows:(size 32)
+	Most expected frame:	31
+	Received newest frame:	40
+	Number of bad frames:	2
+24.945 Recv DATA 41 30, ID 20041
+25.756 Recv DATA 42 30, ID 20042
+25.990 Send DATA 56 30, ID 10056
+26.022 **** Receiver Error, Bad CRC Checksum
+26.256 Send DATA 57 30, ID 10057
+26.287 **** Receiver Error, Bad CRC Checksum
+26.521 Recv DATA 43 30, ID 20043
+26.521 Send DATA 58 30, ID 10058
+26.786 **** Receiver Error, Bad CRC Checksum
+26.786 Send DATA 59 30, ID 10059
+27.036 Send DATA 60 30, ID 10060
+27.051 Recv DATA 31 30, ID 20031
+27.051 .... 32 packets received, 2447 bps, 30.58%, Err 69 (3.2e-004)
+27.301 ---- DATA 5 timeout
+27.301 Send DATA 37 33, ID 10037
+27.316 Recv DATA 34 30, ID 20034
+27.332 Send DATA 31 39, ID 10031
+27.332 Recv NAK for frame 31
+27.363 Send DATA 32 39, ID 10032
+27.363 Recv NAK for frame 32
+27.379 Send DATA 36 39, ID 10036
+27.379 Recv NAK for frame 36
+27.410 Send DATA 44 39, ID 10044
+27.410 Recv NAK for frame 44
+27.426 Send DATA 48 39, ID 10048
+27.426 Recv NAK for frame 48
+27.441 Send DATA 52 39, ID 10052
+27.441 Recv NAK for frame 52
+27.457 Send DATA 53 39, ID 10053
+27.457 Recv NAK for frame 53
+27.566 ---- DATA 6 timeout
+27.566 Send DATA 38 39, ID 10038
+27.628 **** Receiver Error, Bad CRC Checksum
+27.628 Send 44 NAK for frame 40
+27.628 Current receive windows:(size 32)
+	Most expected frame:	40
+	Received newest frame:	44
+	Number of bad frames:	1
+27.894 Recv DATA 46 30, ID 20046
+28.143 Recv DATA 47 30, ID 20047
+28.408 **** Receiver Error, Bad CRC Checksum
+28.674 Recv DATA 49 30, ID 20049
+28.939 Recv DATA 50 31, ID 20050
+29.142 ---- DATA 8 timeout
+29.142 Send DATA 40 39, ID 10040
+29.204 **** Receiver Error, Bad CRC Checksum
+29.235 Send DATA 36 39, ID 10036
+29.235 Recv NAK for frame 36
+29.251 Send DATA 44 39, ID 10044
+29.251 Recv NAK for frame 44
+29.282 Send DATA 48 39, ID 10048
+29.282 Recv NAK for frame 48
+29.313 Send DATA 52 39, ID 10052
+29.313 Recv NAK for frame 52
+29.344 Send DATA 53 39, ID 10053
+29.344 Recv NAK for frame 53
+29.376 Send DATA 56 39, ID 10056
+29.376 Recv NAK for frame 56
+29.391 Send DATA 59 39, ID 10059
+29.391 Recv NAK for frame 59
+29.407 ---- DATA 9 timeout
+29.407 Send DATA 41 39, ID 10041
+29.500 **** Receiver Error, Bad CRC Checksum
+29.656 ---- DATA 10 timeout
+29.656 Send DATA 42 39, ID 10042
+29.766 Recv DATA 53 35, ID 20053
+29.922 ---- DATA 11 timeout
+29.922 Send DATA 43 39, ID 10043
+30.031 Recv DATA 54 35, ID 20054
+30.296 Recv DATA 55 35, ID 20055
+30.452 ---- DATA 13 timeout
+30.452 Send DATA 45 39, ID 10045
+30.561 Recv DATA 56 35, ID 20056
+30.748 ---- DATA 14 timeout
+30.748 Send DATA 46 39, ID 10046
+30.826 Recv DATA 40 35, ID 20040
+30.826 .... 41 packets received, 2748 bps, 34.35%, Err 73 (3.0e-004)
+31.092 Send 45 NAK for frame 44
+31.092 Send 46 NAK for frame 45
+31.092 Send 47 NAK for frame 48
+31.092 Send 48 NAK for frame 51
+31.092 Send 49 NAK for frame 52
+31.092 Current receive windows:(size 32)
+	Most expected frame:	44
+	Received newest frame:	57
+	Number of bad frames:	5
+31.092 Recv DATA 57 35, ID 20057
+31.357 **** Receiver Error, Bad CRC Checksum
+31.606 **** Receiver Error, Bad CRC Checksum
+31.872 Recv DATA 60 35, ID 20060
+32.137 Recv DATA 61 35, ID 20061
+32.402 Recv DATA 62 35, ID 20062
+32.433 Send DATA 36 43, ID 10036
+32.433 Recv NAK for frame 36
+32.464 Send DATA 53 43, ID 10053
+32.464 Recv NAK for frame 53
+32.496 Send DATA 56 43, ID 10056
+32.496 Recv NAK for frame 56
+32.527 Send DATA 59 43, ID 10059
+32.527 Recv NAK for frame 59
+32.605 ---- DATA 15 timeout
+32.605 Send DATA 47 43, ID 10047
+32.698 Recv DATA 63 35, ID 20063
+32.948 **** Receiver Error, Bad CRC Checksum
+33.135 ---- DATA 17 timeout
+33.135 Send DATA 49 43, ID 10049
+33.213 Recv DATA 1 35, ID 20065
+33.400 ---- DATA 18 timeout
+33.400 Send DATA 50 43, ID 10050
+33.478 **** Receiver Error, Bad CRC Checksum
+33.666 ---- DATA 19 timeout
+33.666 Send DATA 51 43, ID 10051
+33.728 Recv DATA 3 35, ID 20067
+33.993 Recv DATA 4 35, ID 20068
+34.258 **** Receiver Error, Bad CRC Checksum
+34.446 ---- DATA 22 timeout
+34.446 Send DATA 54 43, ID 10054
+34.524 **** Receiver Error, Bad CRC Checksum
+34.711 ---- DATA 23 timeout
+34.711 Send DATA 55 43, ID 10055
+34.789 Recv DATA 48 35, ID 20048
+35.054 **** Receiver Error, Bad CRC Checksum
+35.319 Recv DATA 52 35, ID 20052
+35.350 Send DATA 36 43, ID 10036
+35.350 Recv NAK for frame 36
+35.366 Send DATA 53 43, ID 10053
+35.366 Recv NAK for frame 53
+35.584 Recv DATA 5 35, ID 20069
+35.787 ---- DATA 7 timeout
+35.787 Send DATA 39 43, ID 10039
+35.850 **** Receiver Error, Bad CRC Checksum
+35.850 Send 50 NAK for frame 44
+35.850 Send 51 NAK for frame 45
+35.850 Send 52 NAK for frame 51
+35.850 Send 53 NAK for frame 58
+35.850 Send 54 NAK for frame 59
+35.850 Send 55 NAK for frame 0
+35.850 Send 56 NAK for frame 2
+35.850 Current receive windows:(size 32)
+	Most expected frame:	44
+	Received newest frame:	6
+	Number of bad frames:	7
+36.115 Recv DATA 7 35, ID 20071
+36.380 **** Receiver Error, Bad CRC Checksum
